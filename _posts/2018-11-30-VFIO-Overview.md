@@ -114,7 +114,7 @@ vfio_container是一个与VM相对应的概念，一个VM对应一个vfio_contai
 VFIO一般用于虚拟化场景的设备直通(pci passthrough)，说的通俗点就是通过VFIO将设备直接分配给虚拟机使用，以追求虚拟机使用的设备性能最优。这就会存在一系列的问题需要探讨:  
 1.VFIO对完备的设备访问支持：其中包括MMIO， I/O Port，PCI 配置空间，PCI BAR空间：   
 2.VFIO中高效的设备中断机制，其中包括MSI/MSI-X，Interrupt Remapping，以及Posted Interrupt等；  
-3.VFIO对直通设备的热插拔支持。
+3.VFIO对直通设备的热插拔支持。  
 这些问题在现有qemu(vfio_realiza)+VFIO的虚拟化实现方案中都有很详尽的参考，在此不再赘述，有兴趣可以阅读
 [Insight Into VFIO](https://kernelgo.org/vfio-insight.html)。
 
