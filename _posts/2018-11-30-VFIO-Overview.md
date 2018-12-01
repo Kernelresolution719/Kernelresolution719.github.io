@@ -99,7 +99,7 @@ vfio_container是一个与VM相对应的概念，一个VM对应一个vfio_contai
 4. 为container分配相应的内存空间并设置DMA Mapping
 5. 获取group下指定设备(BDF号为"0000:06:0d.0")的句柄
 6. 获取设备的各个region信息，用于后续设备I/O空间访问
-7. 获取设备的中断信息，用于后续的中断注册。
+7. 获取设备的中断信息，用于后续的中断注册
 ```
 下面这张思维导图可以粗略地展示这段代码的底层工作逻辑：
 ![](/img/vfio/vfio-helloworld-relation.png)
